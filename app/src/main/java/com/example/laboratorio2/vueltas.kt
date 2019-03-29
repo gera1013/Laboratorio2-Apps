@@ -48,13 +48,13 @@ class vueltas : AppCompatActivity() {
         }
 
         masVueltas.setOnClickListener{
-            contadorVueltas++
+            contadorVueltas += 1
             textoContador.text = Integer.toString(contadorVueltas)
         }
 
         menosVueltas.setOnClickListener{
-            contadorVueltas--
-            if (contadorVueltas > 0) textoContador.text = Integer.toString(contadorVueltas)
+            contadorVueltas -= 1
+            if (contadorVueltas >= 0) textoContador.text = Integer.toString(contadorVueltas)
             else{
                 contadorVueltas = 0
                 val mensaje = Toast.makeText(applicationContext, "No se pueden agregar menos de 0 vueltas", Toast.LENGTH_SHORT)

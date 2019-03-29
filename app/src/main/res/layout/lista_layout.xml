@@ -3,10 +3,10 @@
               android:layout_width="match_parent"
               android:layout_height="match_parent">
     <TextView
-            android:id="@+id/itemName"
+            android:id="@+id/numeroVuelta"
             android:layout_width="397dp"
             android:layout_height="wrap_content"
-            android:text="Name"
+            android:text=""
             android:padding="24dp"
             android:textAppearance="@android:style/TextAppearance.Holo.Large"/>
 </LinearLayout>

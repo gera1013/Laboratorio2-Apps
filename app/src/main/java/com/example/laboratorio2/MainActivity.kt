@@ -36,6 +36,7 @@ class MainActivity : AppCompatActivity() {
 
         lista.setOnItemLongClickListener { _, _, position, _ ->
             HistorialVueltas.del(position)
+            lista.invalidateViews()
             var mensaje = Toast.makeText(applicationContext, "Elemento eliminado del historial", Toast.LENGTH_SHORT)
             mensaje.show()
             true
