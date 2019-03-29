@@ -36,7 +36,6 @@ class MainActivity : AppCompatActivity() {
             var mensaje = Toast.makeText(applicationContext, "Elemento eliminado del historial", Toast.LENGTH_SHORT)
             mensaje.show()
             true
-
         }
     }
 }

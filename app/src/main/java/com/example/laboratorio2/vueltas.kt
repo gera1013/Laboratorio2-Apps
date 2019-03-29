@@ -4,10 +4,7 @@ import android.annotation.SuppressLint
 import android.content.Intent
 import android.os.Bundle
 import android.support.v7.app.AppCompatActivity;
-import android.widget.Button
-import android.widget.ListView
-import android.widget.TextView
-import android.widget.Toast
+import android.widget.*
 
 class vueltas : AppCompatActivity() {
 
@@ -33,6 +30,9 @@ class vueltas : AppCompatActivity() {
         listaPredefinida.add(3)
         listaPredefinida.add(5)
         listaPredefinida.add(10)
+
+        val adaptador = MyAdapter(this, listaPredefinida)
+        lista.adapter = adaptador
 
         inicio.setOnClickListener{
             val intent = Intent(this, MainActivity::class.java)
