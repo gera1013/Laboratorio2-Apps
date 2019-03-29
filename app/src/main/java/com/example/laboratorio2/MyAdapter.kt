@@ -17,7 +17,9 @@ class MyAdapter(private val context: Context, private val dataSource: ArrayList<
         val rowView = inflater.inflate(R.layout.lista_layout, parent, false)
         val nombre = rowView.findViewById(R.id.numeroVuelta) as TextView
         val numero = getItem(position) as Int
-        val texto = "$numero vueltas"
+        var texto = ""
+        if(numero > 1) texto = "$numero vuelta"
+        else texto = "$numero vueltas"
         nombre.text = texto
 
         return rowView
