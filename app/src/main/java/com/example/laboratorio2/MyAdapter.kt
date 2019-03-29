@@ -18,8 +18,8 @@ class MyAdapter(private val context: Context, private val dataSource: ArrayList<
         val nombre = rowView.findViewById(R.id.numeroVuelta) as TextView
         val numero = getItem(position) as Int
         var texto = ""
-        if(numero > 1) texto = "$numero vuelta"
-        else texto = "$numero vueltas"
+        if(numero > 1) texto = "$numero vueltas"
+        else texto = "$numero vuelta"
         nombre.text = texto
 
         return rowView
