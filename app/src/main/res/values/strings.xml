@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">Laboratorio 2</string>
+    <string name="nuevo_entreno">Nuevo entreno</string>
+    <string name="eliminar_historial">Eliminar historial</string>
+    <string name="title_activity_main2">Main2Activity</string>
+    <string name="valores_">Valores Predeterminados</string>
+    <string name="title_activity_vueltas">vueltas</string>
+</resources>
