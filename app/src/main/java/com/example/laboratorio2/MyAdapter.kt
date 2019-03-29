@@ -11,7 +11,7 @@ class MyAdapter(private val context: Context, private val dataSource: ArrayList<
 
     override fun getView(position: Int, convertView: View?, parent: ViewGroup?): View
     {
-        val rowView = inflater.inflate(R.id.lista_layout, parent, false)
+        val rowView = inflater.inflate(R.layout.lista_layout, parent, false)
         return rowView
     }
 

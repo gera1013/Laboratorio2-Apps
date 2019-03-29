@@ -14,10 +14,13 @@ class MainActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
-        lista = findViewById(R.id.listaVueltas)
+        lista = findViewById(R.id.listaHistorial)
 
         val NuevoEntreno = findViewById<Button>(R.id.nuevoEntreno)
         val EliminarHistorial = findViewById<Button>(R.id.historial)
+
+        val adaptador = MyAdapter(this, HistorialVueltas.lapHistory)
+        lista.adapter = adaptador
 
         NuevoEntreno.setOnClickListener{
             val intent = Intent(this, vueltas::class.java)
